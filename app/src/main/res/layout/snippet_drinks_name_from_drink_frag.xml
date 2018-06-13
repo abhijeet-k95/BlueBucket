@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_drink_name_drink_frag">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_drink_name_drink_frag"
+            android:text="Drink Name"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_drink_name_drink_frag"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="750ml"
+                android:layout_centerVertical="true"
+                android:id="@+id/drink_quantity_tag"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/drink_price_tag"
+                android:layout_toRightOf="@id/drink_quantity_tag"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text=" 750 rs "/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/add_to_cart"
+                android:id="@+id/drink_add_to_cart"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_near_me"
+        android:icon="@drawable/ic_near_me"
+        android:title="Near Me"/>
+    <item
+        android:id="@+id/bottom_nav_search"
+        android:icon="@drawable/ic_search_icon"
+        android:title="Search"/>
+    <item
+        android:id="@+id/bottom_nav_bucket"
+        android:icon="@drawable/ic_bucket_icon"
+        android:title="Bucket"/>
+    <item
+        android:id="@+id/bottom_nav_wallet"
+        android:icon="@drawable/ic_wallet_icon"
+        android:title="Wallet"/>
+    <item
+        android:id="@+id/bottom_nav_account"
+        android:icon="@drawable/ic_account_icon"
+        android:title="Account"/>
+
+</menu>

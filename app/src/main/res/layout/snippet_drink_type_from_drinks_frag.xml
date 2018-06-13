@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_drink_type_drink_frag">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drink_frag_drink_type"
+            android:text="VODKA"/>
+
+        <ToggleButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/toggleButton_drink_type_drink_frag"
+            android:textOn=""
+            android:textOff=""
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/toggle_button_check_uncheck"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_drink_type_drink_frag"
+        android:id="@+id/rl_drinks_name_drink_frag"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_drink_frag_drinks">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

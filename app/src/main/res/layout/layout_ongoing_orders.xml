@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/orange_black_top_border"
+            android:id="@+id/slider_ongoing_orders"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slide it Down"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_ongoing_order"
+                android:padding="7dp">
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/ongoingOrderProgressBar"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:padding="10dp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/ongoing_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Date"/>
+                            <TextView
+                                android:id="@+id/ongoing_bar_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bar Name"/>
+                            <TextView
+                                android:id="@+id/ongoing_service_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Service Type"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/ongoing_bill"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Bill"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/lin_btn_order_more_finish"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_new_order_finish"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Finish"
+                            android:background="@drawable/border"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"/>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_new_order_more"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:text="Order More"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lin_btn_cancel_order"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_new_order_cancel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Cancel the order"
+                            android:background="@drawable/border"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

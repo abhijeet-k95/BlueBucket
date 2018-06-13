@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Blue Bucket</string>
+    <string name="bar_id">bar_id</string>
+    <string name="bar_name">bar_name</string>
+    <string name="bar_address">bar_address</string>
+    <string name="bar_id1">bar_id</string>
+    <string name="bar_id2">bar_id</string>
+    <string name="title_activity_login">Sign in</string>
+
+
+</resources>
